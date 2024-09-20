@@ -1,5 +1,4 @@
 import { ShieldCheckIcon, UserIcon } from '@heroicons/react/24/solid'; // Tailwind Heroicons
-import * as Icons from 'heroicons-react'
 const Features = () => {
   return (
     <section className="bg-black text-white py-16">
