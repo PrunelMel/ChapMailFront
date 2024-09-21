@@ -22,7 +22,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-gray-500 mb-4">
-          &copy; {new Date().getFullYear()} Anonymous Mail. Tous droits réservés.
+          &copy; {new Date().getFullYear()} ChapMail. Tous droits réservés.
         </div>
 
         {/* Social Media Icons */}

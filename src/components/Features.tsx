@@ -3,7 +3,7 @@ const Features = () => {
   return (
     <section className="bg-black text-white py-16">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-purple-500 mb-10">Pourquoi utiliser Anonymous Mail ?</h2>
+        <h2 className="text-4xl font-bold text-purple-500 mb-10">Pourquoi utiliser ChapMail ?</h2>
 
         <div className="flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0 md:space-x-12">
           
@@ -34,7 +34,7 @@ const Features = () => {
             <UserIcon className="h-16 w-16 text-purple-500 mb-4 mx-auto" />
             <h3 className="text-xl font-semibold text-white mb-4">Facilité d’utilisation</h3>
             <p className="text-gray-400">
-              Utilisez Anonymous Mail facilement, sans complication. Une interface simple et intuitive.
+              Utilisez ChapMail facilement, sans complication. Une interface simple et intuitive.
             </p>
           </div>
 
