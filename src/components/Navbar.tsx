@@ -12,7 +12,7 @@ const Navbar = () => {
         <ul className="flex space-x-8">
           <li>
             <a href="#" className="text-white hover:text-purple-400 transition duration-300">
-              Features
+              Home
             </a>
           </li>
           <li>
