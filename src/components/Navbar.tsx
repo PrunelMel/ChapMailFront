@@ -1,7 +1,7 @@
 
 const Navbar = () => {
   return (
-    <nav className="bg-transparent text-white p-4">
+    <nav className="bg-transparent text-white w-screen p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold text-purple-500 hover:text-purple-300 transition duration-300">
