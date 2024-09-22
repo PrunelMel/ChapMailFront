@@ -1,8 +1,14 @@
-import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom'
+import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider, Outlet} from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
+import Dashboard from './pages/Dashboard'
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route index element={<LandingPage />} />
+    <Route path='/' element={<> <Outlet></Outlet></>}>
+      <Route index element={<LandingPage />} />
+      <Route path="/dash" element={<Dashboard />}/>
+    </Route>
+    
+    
   )
 )
 function App() {

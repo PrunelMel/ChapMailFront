@@ -30,7 +30,7 @@ const Navbar = () => {
         {/* Call to Action Button */}
         <div>
           <a
-            href="#"
+            href="/dash"
             className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition duration-300"
           >
             Get Started
