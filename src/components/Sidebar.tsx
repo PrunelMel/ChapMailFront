@@ -12,7 +12,7 @@ const Sidebar = () => {
     <div className={`bg-black h-screen ${isOpen ? 'w-64' : 'w-16'} transition-all duration-300`}>
       {/* Logo and Toggle Button */}
       <div className="flex justify-between items-center p-4">
-        <h1 className={`text-2xl font-bold text-purple-500 ${!isOpen && 'hidden'}`}>ChapMail</h1>
+        <h1 className={`text-2xl font-bold text-purple-500 ${!isOpen && 'hidden'}`}></h1>
         <button
           className="text-white focus:outline-none"
           onClick={toggleSidebar}
