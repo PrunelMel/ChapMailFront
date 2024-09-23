@@ -1,23 +1,24 @@
 import { FaEnvelopeOpen, FaTrash } from 'react-icons/fa';
 
-const EmailCard = ({ sender, subject, snippet, date, isRead }: { sender: string; subject: string; snippet: string; date: string; isRead: boolean }) => {
+const EmailCard = ({ sender, subject, snippet, date, isRead }:{sender: string, subject: string, snippet: string, date: string, isRead: boolean}) => {
   return (
     <div
       className={`flex items-center justify-between p-4 mb-2 rounded-lg bg-gray-800 hover:bg-gray-700 cursor-pointer transition-colors duration-200 ${
         isRead ? 'opacity-70' : 'opacity-100'
       }`}
     >
-      {/* Left Side - Sender and Subject */}
+      {/* Left Side - Sender */}
       <div className="flex items-center space-x-4">
         <div className="text-white">
           <h4 className="font-semibold text-purple-500">{sender}</h4>
-          <p className="text-gray-400">{subject}</p>
         </div>
       </div>
 
-      {/* Middle - Snippet */}
+      {/* Middle - Subject and Snippet on same line */}
       <div className="flex-1 mx-4">
-        <p className="text-gray-400 truncate">{snippet}</p>
+        <p className="text-gray-400 truncate">
+          <span className="font-bold text-white">{subject}</span> - {snippet}
+        </p>
       </div>
 
       {/* Right Side - Date and Icons */}
