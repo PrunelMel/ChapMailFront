@@ -1,5 +1,4 @@
 import { FaEnvelopeOpen, FaTrash } from 'react-icons/fa';
-
 const EmailCard = ({ sender, subject, snippet, date, isRead }:{sender: string, subject: string, snippet: string, date: string, isRead: boolean}) => {
   return (
     <div
@@ -35,5 +34,4 @@ const EmailCard = ({ sender, subject, snippet, date, isRead }:{sender: string, s
     </div>
   );
 };
-
 export default EmailCard;

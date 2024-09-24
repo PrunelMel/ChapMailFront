@@ -25,19 +25,22 @@ const Dashboard = () => {
   return (
     <div>
       <Header />
-      <Sidebar />
-      <div className="p-4">
-      {emails.map((email) => (
-        <EmailCard
-          key={email.id}
-          sender={email.sender}
-          subject={email.subject}
-          snippet={email.snippet}
-          date={email.date}
-          isRead={email.isRead}
-        />
-      ))}
-    </div>
+      <div className='flex row-auto'>
+        <Sidebar />
+        <div className="w-full">
+          {emails.map((email) => (
+            <EmailCard
+              key={email.id}
+              sender={email.sender}
+              subject={email.subject}
+              snippet={email.snippet}
+              date={email.date}
+              isRead={email.isRead}
+            />
+          ))}
+        </div>
+      </div>
+      
     </div>
   )
 }
